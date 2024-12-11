@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\AuthController;
 
 // Home Route
 Route::get('/', function () {
@@ -30,15 +31,19 @@ Route::get('/Login', function () {
     return view('Login'); // Returns 'resources/views/Login.blade.php'
 })->name('Login');
 
+// Login Routes
+Route::get('/Login', [AuthController::class, 'showLoginForm'])->name('Login');
+Route::post('/Login', [AuthController::class, 'login'])->name('login.post');
+
 // Signup Route
 Route::get('/Signup', function () {
     return view('Signup'); // Returns 'resources/views/Signup.blade.php'
 })->name('Signup');
 
 // Dashboard Route (Inertia)
-Route::get('/dashboard', function () {
+Route::get('/Dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('Dashboard');
 
 // Profile Routes
 Route::middleware('auth')->group(function () {

@@ -31,7 +31,8 @@
             </nav>
         </div>
         <div class="form_box">
-            <form class="login_form" action="#" method="post">
+            <form class="login_form" action="{{ route('login.post') }}" method="post">
+                @csrf
                 <!-- Email field -->
                 <div class="input_box">
                     <label for="email">Email</label>
