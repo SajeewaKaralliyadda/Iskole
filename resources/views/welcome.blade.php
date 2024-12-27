@@ -14,7 +14,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>Laravel</title>
+    <title>ඉskole</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}" />
 
     <!-- Fonts -->
@@ -929,6 +929,7 @@
                         @if (Route::has('login'))
                         <nav class="-mx-3 flex flex-1 justify-end">
                             <a href="{{ route('home') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">Home</a>
+                            <a href="{{ route('courses') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">Courses</a>
                             <a href="{{ route('about') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">About</a>
                             @auth
                             <a
@@ -964,7 +965,7 @@
 
                     <div class="banner-btn">
                         <a href="{{ route('about') }}"><span></span>LEARN MORE</a>
-                        <a href="#"><span></span>SEE COURSE</a>
+                        <a href="{{ route('courses') }}"><span></span>SEE COURSE</a>
                     </div>
                 </div>
                 <main class="mt-6">
@@ -987,13 +988,12 @@
                         <img src="{{ asset('images/courseimg1.jpg') }}" alt="Course Image" />
                         <div class="overlay"></div>
                         <div class="courses-desc">
-                            <h3><a href="#">Computer Engineering</a></h3>
+                            <h3><a href="{{ route('courses') }}">Introduction to Web Design</a></h3>
                             <hr />
                             <p>
-                                Computer engineer is also used to describe someone
-                                who has a background in electrical engineering.
-                                Engage engineers right now to seize growth
-                                opportunities!
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                                Pariatur?
                             </p>
                         </div>
                     </div>
@@ -1002,14 +1002,12 @@
                         <img src="{{ asset('images/courseimg2.jpg') }}" alt="Course Image" />
                         <div class="overlay"></div>
                         <div class="courses-desc">
-                            <h3><a href="#">Social Media Network</a></h3>
+                            <h3><a href="{{ route('courses') }}">Python for Beginners</a></h3>
                             <hr />
                             <p>
-                                As a social media network manager, overseeing a
-                                company's interactions with the public by
-                                implementing social media platforms' content
-                                strategies. In the "Social media network" course, we
-                                cover all the techniques and basics.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                                Pariatur?
                             </p>
                         </div>
                     </div>
@@ -1018,14 +1016,12 @@
                         <img src="{{ asset('images/courseimg3.jpg') }}" alt="Course Image" />
                         <div class="overlay"></div>
                         <div class="courses-desc">
-                            <h3><a href="#">Professional Graphic Designer</a></h3>
+                            <h3><a href="{{ route('courses') }}">Project Management Basics</a></h3>
                             <hr />
                             <p>
-                                This course covers all of the software used for
-                                graphic design and techniques. We also strive to
-                                improve your creativity. After completing the
-                                course, you can freelance as a graphic designer on
-                                Fiverr, Upwork, and more.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                                Pariatur?
                             </p>
                         </div>
                     </div>

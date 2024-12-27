@@ -960,7 +960,7 @@
 
 
                 <div class="banner-text">
-                    <h1>About</h1>
+                    <h1>Courses</h1>
                     <p>Let's Learn New Things<br />_ඉskole</p>
                 </div>
                 <main class="mt-6">
@@ -968,55 +968,32 @@
             </div>
             <br>
             <hr class="footer_hr">
-            <!-- About Section -->
-            <section class="aboutcontent">
-                <div class="title-text">
-                    <p>Who are we?</p>
-                    <h4>Let's create educated citizens to create a prosperous society</h4>
-                </div>
-                <p class="abouttext">
-                    Onlineguru is a preferred platform for online courses in web design,
-                    social media, and more. For these courses, we hire professionals to
-                    conduct them. We warmly welcome self-learners too. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Praesentium consequuntur voluptate
-                    itaque commodi, corrupti ex libero, dolorem aliquid ullam temporibus
-                    nemo cumque numquam incidunt? Suscipit nemo ipsam vel nesciunt earum.
-                </p>
-            </section>
 
-            <!-- Teachers Section -->
+            <!-- Courses Section -->
             <section id="teachers-banner">
                 <div class="title-text">
-                    <p>Our Teachers</p>
-                    <h4>Let's create educated citizens to create a prosperous society</h4>
+                    <p>Our Courses</p>
+                    <h4>Let's Learn New Things</h4>
                 </div>
                 <div class="teachers-row">
+                    <!-- Teacher 1 -->
                     <div class="teachers-col">
                         <div class="teacher">
-                            <img src="{{ asset('images/t1.jpg') }}" alt="teacher 01" />
+                            <img src="{{ asset('images/img-5.jpg') }}" alt="course 01" />
                         </div>
                         <div class="teacher-info">
-                            <h3>George Andrew</h3>
-                            <small>Lecturer of Web Design</small>
+                            <h3>Introduction to Web Design</h3>
+                            <small>Web Design</small>
                         </div>
                         <p>
-                            Studied at the "University of North Carolina." Also, the co-founder
-                            of a "universal web designer." He had more than 20-year experience
-                            as a Lecturer.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
                         </p>
                         <div class="teacher-social">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-envelope-o"></i> </a>
+                                    <button class="course_btn">View</button>
                                 </li>
                             </ul>
                         </div>
@@ -1024,29 +1001,21 @@
 
                     <div class="teachers-col">
                         <div class="teacher">
-                            <img src="{{ asset('images/t2.jpg') }}" alt="teacher 02" />
+                            <img src="{{ asset('images/img-4.jpg') }}" alt="course 02" />
                         </div>
                         <div class="teacher-info">
-                            <h3>Matthieu Gomez</h3>
-                            <small>Instructor of Graphic Design</small>
+                            <h3>Web Development Advanced</h3>
+                            <small>Web Design</small>
                         </div>
                         <p>
-                            He had more than 08-year experience as a Lecturer. Also, He was Top
-                            rated graphic design seller on "Fiverr and Upwork" platforms.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
                         </p>
                         <div class="teacher-social">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-envelope-o"></i> </a>
+                                    <button class="course_btn">View</button>
                                 </li>
                             </ul>
                         </div>
@@ -1054,29 +1023,21 @@
 
                     <div class="teachers-col">
                         <div class="teacher">
-                            <img src="{{ asset('images/t3.jpg') }}" alt="teacher 03" />
+                            <img src="{{ asset('images/img-5.jpg') }}" alt="course 03" />
                         </div>
                         <div class="teacher-info">
-                            <h3>Danial Lewis</h3>
-                            <small>Visiting Lecturer of Social Media Network</small>
+                            <h3>Python for Beginners</h3>
+                            <small>Programming</small>
                         </div>
                         <p>
-                            Danial is currently working as a manager of the social media network
-                            at ABC company. He visits us to do some modules.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
                         </p>
                         <div class="teacher-social">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-envelope-o"></i> </a>
+                                    <button class="course_btn">View</button>
                                 </li>
                             </ul>
                         </div>
@@ -1084,30 +1045,109 @@
 
                     <div class="teachers-col">
                         <div class="teacher">
-                            <img src="{{ asset('images/t4.jpg') }}" alt="teacher 04" />
+                            <img src="{{ asset('images/img-4.jpg') }}" alt="course 04" />
                         </div>
                         <div class="teacher-info">
-                            <h3>Jimmy Adam</h3>
-                            <small>Seniour Lecturer of Computer System</small>
+                            <h3>Java Programming</h3>
+                            <small>Programming</small>
                         </div>
                         <p>
-                            Studied at the "University of Perth." Also, he had more experience
-                            working with leading IT companies. He has lot's of experience
-                            working with students.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
                         </p>
                         <div class="teacher-social">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <button class="course_btn">View</button>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="teachers-col">
+                        <div class="teacher">
+                            <img src="{{ asset('images/img-5.jpg') }}" alt="course 05" />
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Project Management Basics</h3>
+                            <small>Project Management</small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
+                        </p>
+                        <div class="teacher-social">
+                            <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <button class="course_btn">View</button>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="teachers-col">
+                        <div class="teacher">
+                            <img src="{{ asset('images/img-4.jpg') }}" alt="course 06" />
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Team collaboration in IT</h3>
+                            <small>Project Management</small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
+                        </p>
+                        <div class="teacher-social">
+                            <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <button class="course_btn">View</button>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="teachers-col">
+                        <div class="teacher">
+                            <img src="{{ asset('images/img-5.jpg') }}" alt="course 07" />
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Data Analysis Basics</h3>
+                            <small>Software Development</small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
+                        </p>
+                        <div class="teacher-social">
+                            <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-envelope-o"></i> </a>
+                                    <button class="course_btn">View</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="teachers-col">
+                        <div class="teacher">
+                            <img src="{{ asset('images/img-4.jpg') }}" alt="course 08" />
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Object-Oriented Design and Analysis</h3>
+                            <small>Software Engineering </small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Repudiandae sequi excepturi saepe architecto corporis et sit earum.
+                            Pariatur? <br /><br />
+                        </p>
+                        <div class="teacher-social">
+                            <ul>
+                                <li>
+                                    <button class="course_btn">View</button>
                                 </li>
                             </ul>
                         </div>
@@ -1115,22 +1155,6 @@
                 </div>
             </section>
 
-            <!-- Location Section -->
-            <section class="location">
-                <div class="title-text">
-                    <p>Our Location</p>
-                    <h4>Let's create educated citizens to create a prosperous society</h4>
-                </div>
-                <div class="aboutlocation">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.395115319391!2d79.83447611331941!3d6.926709086156205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593badd140d5%3A0xabf14e3453e710a9!2sGalle%20Face%20Ground!5e0!3m2!1sen!2slk!4v1681894811898!5m2!1sen!2slk"
-                        width="400"
-                        height="300"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </section>
             <hr class="footer_hr">
             <footer class="py-16 text-center text-sm text-black dark:text-white/70">

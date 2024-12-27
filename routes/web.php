@@ -12,6 +12,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/courses', function () {
+    return view('courses');
+})->name('courses');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -25,6 +29,4 @@ Route::middleware('auth')->group(function () {
 Route::get('/dashboard', [CourseController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::post('/courses/enroll/{courseId}', [CourseController::class, 'enroll'])->middleware('auth')->name('courses.enroll');
 Route::post('/courses/unenroll/{courseId}', [CourseController::class, 'unenroll'])->middleware('auth')->name('courses.unenroll');
-
-
 require __DIR__ . '/auth.php';
