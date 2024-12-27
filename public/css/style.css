@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.logo_img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+}
+.flex {
+    justify-content: flex-start;
+}
+
+#banner {
+    background: linear-gradient(rgba(153, 193, 217, 0.5), rgba(4, 9, 30, 0.7)),
+        url(/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 120px;
+}
+.banner-text h1 {
+    font-size: 130px;
+    text-transform: capitalize;
+}
+.banner-text p {
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.banner-btn {
+    margin: 70px auto 0;
+}
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #e0fbfc;
+    border: 0.5px solid #ffffff90;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    font-weight: bold;
+}
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.banner-btn a:hover span {
+    width: 100%;
+}
+.banner-btn a:hover {
+    color: #000;
+    font-weight: bold;
+}
+/*navbar*/
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    align-items: center;
+    background: #46494b9d;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav_menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav_menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav_menu button {
+    width: 110px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Courses css*/
+
+#Courses {
+    width: 100%;
+    padding: 70px 0;
+}
+.courses-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-course {
+    flex-basis: 31%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.courses-desc p {
+    font-size: 13px;
+}
+.single-course img {
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #002347);
+    opacity: 0;
+    transition: 1s;
+}
+.single-course:hover .overlay {
+    opacity: 1;
+}
+.courses-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.courses-desc p {
+    font-size: 14px;
+}
+.courses-desc a {
+    text-decoration: none;
+    color: #f9ab08;
+}
+.single-course:hover .courses-desc {
+    bottom: 30%;
+    opacity: 1;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p {
+    margin: auto;
+    font-size: 50px;
+    color: #f8f8fb;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.title-text p::after {
+    content: "";
+    width: 90px;
+    height: 75px;
+    background: linear-gradient(#0f07f635, #0f07f6);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+.title-text h4 {
+    font-style: italic;
+    color: #a6a6a6;
+}
+/*footer css*/
+
+#footer {
+    display: flex;
+    padding: 0 50px 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002347;
+    height: 80vh;
+}
+#footer ul li {
+    list-style: none;
+    padding: 5px 5px;
+    position: relative;
+}
+.footerli-head {
+    color: #fff;
+    font-size: 19px;
+}
+#footer ul li a {
+    color: #8294ab;
+    text-decoration: none;
+    font-size: 16px;
+}
+.news-letter h3 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+.news-letter p {
+    color: #8294ab;
+}
+#email {
+    width: 30vh;
+    height: 4.5vh;
+    padding: 0 2vh 0 2vh;
+    border: 1px #002347 solid;
+    border-radius: 3px;
+    background-color: #8294ab;
+}
+#subbtn {
+    width: 10vh;
+    height: 4vh;
+    background-color: #f9ab08;
+    border: 1px #f9ab08 solid;
+    border-radius: 3px;
+}
+.footerlinks {
+    flex: 1;
+    text-align: center;
+    background-color: #00234700;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footerlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    background-color: #ffffff;
+}
+.footerlinks ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+.copyright {
+    padding: 0 50px 0 50px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #00000000;
+    height: auto;
+}
+.copyright p {
+    color: #fff;
+    font-weight: bold;
+}
+.footer_hr {
+    color: #ffffff;
+    height: 3px;
+}
+/*Our teachers css*/
+
+#teachers-banner {
+    width: 100%;
+    padding: 70px 0;
+}
+.teachers-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.teachers-col {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.teacher-info h3 {
+    color: #002347;
+    font-size: 21px;
+    padding: 8px 0 8px 0;
+}
+.teacher-info {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.teachers-col p {
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    text-align: justify;
+    text-transform: capitalize;
+    color: #6b727c;
+}
+.teacher {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.teacher img {
+    margin-right: 20px;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.teacher-info small {
+    color: #6b727c;
+}
+.teachers-col:hover {
+    box-shadow: 0 10px 10px 3px rgba(0, 35, 71, 0.2);
+}
+.teacher-social {
+    flex: 1;
+    text-align: center;
+}
+.teacher-social ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.teacher-social ul li a {
+    color: #8294ab;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.aboutcontent {
+    margin-top: 80px;
+    margin: 50px;
+    text-align: justify;
+}
+.abouttext {
+    width: auto;
+    align-items: center;
+    align-content: space-around;
+}
+.aboutlocation {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.course_btn {
+    width: 110px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.form_box {
+    margin-top: 45px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+/* Login form styling */
+.login_form {
+    width: 100%;
+    max-width: 435px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.login_form h3 {
+    font-size: 20px;
+    text-align: center;
+}
+.login_form .login_option .option {
+    width: calc(100% / 2 - 12px);
+}
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #f8f8fb;
+    border: 1px solid #dadaf2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.login_form .login_option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+}
+.login_form .login_option .option a img {
+    max-width: 25px;
+}
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+}
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+/* Login option separator styling */
+.login_form .separator span {
+    background: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+.login_form .separator::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #c2c2c2;
+    display: block;
+}
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+/* Input field styling */
+form .input_box input {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #dadaf2;
+    border-radius: 5px;
+    outline: none;
+    background: #f8f8fb;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+#email {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #dadaf2;
+    border-radius: 5px;
+    outline: none;
+    background: #f8f8fb;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+form .input_box input:focus {
+    border-color: #626cd6;
+}
+form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+form .input_box {
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626cd6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+form button:hover {
+    background: #4954d0;
+}
