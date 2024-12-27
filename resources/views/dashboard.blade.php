@@ -9,17 +9,35 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+                    <!-- Your Courses Section -->
+                    <div class="mt-6">
+                        <h1 class="text-lg font-semibold">Your Courses</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                            @forelse($yourCourses as $course)
+                            <div class="p-4 bg-white shadow-md rounded">
+                                <h4 class="text-lg font-bold">{{ $course->name }}</h4><br>
+                                <p>{{ $course->description }}</p>
+                                <button
+                                    onclick="unenrollCourse({{ $course->id }})"
+                                    class="mt-2 px-4 py-2 bg-red-500 text-white rounded">
+                                    Unenroll
+                                </button>
+                            </div>
+                            @empty
+                            <p>You have not enrolled in any courses yet.</p>
+                            @endforelse
+                        </div>
+                    </div>
                 </div>
-            </div>
-
+            </div> <br>
+            <hr class="footer_hr">
             <!-- Available Courses Section -->
             <div class="mt-6">
-                <h3 class="text-lg font-semibold">Available Courses</h3>
+                <h1 class="text-lg font-semibold">Available Courses</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                     @foreach($availableCourses as $course)
                     <div class="p-4 bg-white shadow-md rounded">
-                        <h4 class="text-lg font-bold">{{ $course->name }}</h4>
+                        <h4 class="text-lg font-bold">{{ $course->name }}</h4><br>
                         <p>{{ $course->description }}</p>
                         <button
                             onclick="enrollCourse({{ $course->id }})"
@@ -31,25 +49,7 @@
                 </div>
             </div>
 
-            <!-- Your Courses Section -->
-            <div class="mt-6">
-                <h3 class="text-lg font-semibold">Your Courses</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-                    @forelse($yourCourses as $course)
-                    <div class="p-4 bg-white shadow-md rounded">
-                        <h4 class="text-lg font-bold">{{ $course->name }}</h4>
-                        <p>{{ $course->description }}</p>
-                        <button
-                            onclick="unenrollCourse({{ $course->id }})"
-                            class="mt-2 px-4 py-2 bg-red-500 text-white rounded">
-                            Unenroll
-                        </button>
-                    </div>
-                    @empty
-                    <p>You have not enrolled in any courses yet.</p>
-                    @endforelse
-                </div>
-            </div>
+
         </div>
     </div>
 
